@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.K Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>S.K Shop</h1>
+        <button id="menu-toggle">メニュー</button>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#products">商品一覧</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <section id="search">
+        <input type="text" id="search-bar" placeholder="商品を検索..." oninput="filterProducts()">
+    </section>
+
+    <section id="products">
+        <h2>商品一覧</h2>
+        <div class="product-grid" id="product-list"></div>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="お名前">
+            <input type="email" placeholder="メールアドレス">
+            <textarea placeholder="お問い合わせ内容"></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <div id="thanks-effect">ありがとう！！</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
